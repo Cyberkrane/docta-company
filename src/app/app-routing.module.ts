@@ -3,14 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'auth',
     loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
   },
   {
-    path: 'LoginAdministrador',
-    loadChildren: () => import('./auth/login-docta/login-docta.component').then(m => m.LoginDoctaComponent)
+    path: '**',
+    redirectTo: 'auth'
   }
-
 ];
 
 @NgModule({
