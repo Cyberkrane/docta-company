@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class LoginDoctaComponent {
 
-  title: any = 'Administrador/a'
+  title: string = 'Administrador/a';
+  rol: string = 'manager';
 
 }
