@@ -8,5 +8,6 @@ import { Component, Input } from '@angular/core';
 export class VistaLoginComponent {
 
   @Input() title: string = '';
+  @Input() rol: string = '';
 
 }
