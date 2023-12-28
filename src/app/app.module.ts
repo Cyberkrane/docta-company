@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // mis modulos
 import { SharedModule } from './shared/shared.module';
-import { AngularMaterialModule } from './shared/angular-material.module';
 import { AuthRoutingModule } from './auth/auth-routing.module';
 import { DocumentsModule } from './documents/documents.module';
 
@@ -23,7 +22,6 @@ import { DocumentsModule } from './documents/documents.module';
     BrowserAnimationsModule,
 
     SharedModule,
-    AngularMaterialModule,
     AuthRoutingModule,
     DocumentsModule
   ],

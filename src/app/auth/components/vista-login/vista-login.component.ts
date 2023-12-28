@@ -10,4 +10,8 @@ export class VistaLoginComponent {
   @Input() title: string = '';
   @Input() rol: string = '';
 
+  irADocuments() {
+        window.location.href = 'http://localhost:4200/documents/list';
+ }
+
 }
