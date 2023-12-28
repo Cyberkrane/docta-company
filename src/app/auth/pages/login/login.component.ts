@@ -11,6 +11,6 @@ export class LoginComponent implements OnInit {
   rol: string = 'employee';
 
   ngOnInit(): void {
-    console.log('login works!');
+    console.log(this.title, this.rol);
   }
 }

@@ -12,6 +12,7 @@ export class RegisterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.title);
   }
 
 }

@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListDocumentsComponent } from './list-documents/list-documents.component';
+import { DocumentsRoutingModule } from './documents-routing.module';
+import {MatTableModule} from '@angular/material/table';
+
+
 
 
 
@@ -9,7 +13,12 @@ import { ListDocumentsComponent } from './list-documents/list-documents.componen
     ListDocumentsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    DocumentsRoutingModule,
+    MatTableModule
+  ],
+  exports:[
+    ListDocumentsComponent
   ]
 })
 export class DocumentsModule { }
