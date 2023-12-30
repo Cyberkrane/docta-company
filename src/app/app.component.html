@@ -25,9 +25,16 @@
                         <a class="nav-link" routerLink="/auth/register" routerLinkActive="active">register</a>
                     </li>
 
-                    <li class="nav-item mx-4">
-                        <a class="nav-link" routerLink="/documents" routerLinkActive="active">Documents</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Documents
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" routerLink="/documents/List">Listado de documentos</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" routerLink="/documents/clients">Listado de Clientes</a></li>
+                        </ul>
+                      </li>
                     
                 </ul>
                 <div id="user">
